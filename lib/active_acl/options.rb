@@ -1,3 +1,4 @@
+require 'active_acl/db/active_record_adapter'
 module ActiveAcl
   unless const_defined?('OPTIONS')
     OPTIONS = {} 

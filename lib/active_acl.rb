@@ -1,5 +1,7 @@
 module ActiveAcl
-  
+  unless const_defined?('OPTIONS')
+    OPTIONS = {}
+  end
   
 end
 
