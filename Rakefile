@@ -25,6 +25,7 @@ begin
       s.extra_rdoc_files = ["README.rdoc","LICENSE","CHANGELOG"]
       s.rdoc_options     = [ "--title", "Active Acl Plus", "--main", "README.rdoc"]
       s.files = FileList["[A-Z]*.*","{lib,app,db}/**/*"]
+      s.add_dependency("activerecord")
    end
    rescue LoadError
    puts "Jeweler not available."

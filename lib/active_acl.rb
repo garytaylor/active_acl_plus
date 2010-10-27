@@ -2,7 +2,8 @@ module ActiveAcl
   unless const_defined?('OPTIONS')
     OPTIONS = {}
   end
-  
+  require 'active_acl/engine' if defined?(Rails)
+
 end
 
 # plugin dependency
