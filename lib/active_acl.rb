@@ -27,7 +27,7 @@ require 'active_acl/load_files_from'
 $:.unshift File.join(File.dirname(__FILE__),'../app/models/')
 
 begin
-['privilege','acl_section','privilege','requester_link','target_link',
+['acl','privilege','acl_section','privilege','requester_link','target_link',
 'acl_section','requester_group_link','target_group_link','acl',
 'controller_group','controller_action'].each do |model|
     require "active_acl/#{model}"
